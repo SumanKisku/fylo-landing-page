@@ -1,3 +1,42 @@
+/* Variables */
+/* Colors */
+/* Primary colors */
+/* Accent */
+/* Neutral */
+/* Typography */
+/* Heading, Call-To-Action, Header navigation */
+/* Body */
+* {
+  box-sizing: border-box; }
 
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif; }
+
+.container {
+  /* modifier for space on the edges */
+  padding: 0 120px; }
+
+nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  nav .logo {
+    height: 50px;
+    width: auto; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    width: 300px;
+    justify-content: space-between; }
+    nav ul a {
+      text-decoration: none;
+      color: #070439; }
+      nav ul a:hover {
+        text-decoration: underline; }
 
 /*# sourceMappingURL=style.css.map */
