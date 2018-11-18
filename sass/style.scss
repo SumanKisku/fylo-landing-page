@@ -29,14 +29,20 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: $secondary-font;
+}
+
+h2,
+h3 {
     font-family: $primary-font;
 }
 
 .container { /* modifier for space on the edges */
-    padding: 0 120px;
+    max-width: 1200px;
+    margin: 0 120px
 }
 
-nav {
+.navigation {
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -59,6 +65,49 @@ nav {
             color: $very-dark-blue;
             &:hover {
                 text-decoration: underline;
+            }
+        }
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    color: $very-dark-blue;
+    .header__left,
+    .header__right {
+        max-width: 600px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .cta-form {
+        width: 100%;
+        display: flex;
+        .cta-form__email {
+            width: 65%;
+            border: 1px solid $very-dark-blue;
+            padding: 15px 20px;
+            margin-right: 20px;
+            border-radius: 2px;
+        }
+        .cta-form__submit {
+            width: 35%;
+            font-family: $primary-font;
+            font-weight: 700;
+            color: $light-grayish-blue;
+            background-color: $bright-blue;
+            border: 0;
+            border-radius: 2px;
+            box-shadow: 1px 1px 2px $desaturated-blue;
+            cursor: pointer;
+            transition: all .2s;
+            &:hover,&:focus {
+                box-shadow: 2px 2px 1px;
+            }
+            &:active {
+                box-shadow: inset 1px 0 1px $very-dark-blue;
             }
         }
     }

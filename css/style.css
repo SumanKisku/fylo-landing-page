@@ -12,31 +12,72 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: "Open Sans", sans-serif; }
+
+h2,
+h3 {
   font-family: "Raleway", sans-serif; }
 
 .container {
   /* modifier for space on the edges */
-  padding: 0 120px; }
+  max-width: 1200px;
+  margin: 0 120px; }
 
-nav {
+.navigation {
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  nav .logo {
+  .navigation .logo {
     height: 50px;
     width: auto; }
-  nav ul {
+  .navigation ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
     display: flex;
     width: 300px;
     justify-content: space-between; }
-    nav ul a {
+    .navigation ul a {
       text-decoration: none;
       color: #070439; }
-      nav ul a:hover {
+      .navigation ul a:hover {
         text-decoration: underline; }
+
+.header {
+  display: flex;
+  align-items: center;
+  color: #070439; }
+  .header .header__left,
+  .header .header__right {
+    max-width: 600px; }
+    .header .header__left img,
+    .header .header__right img {
+      width: 100%;
+      height: auto; }
+  .header .cta-form {
+    width: 100%;
+    display: flex; }
+    .header .cta-form .cta-form__email {
+      width: 65%;
+      border: 1px solid #070439;
+      padding: 15px 20px;
+      margin-right: 20px;
+      border-radius: 2px; }
+    .header .cta-form .cta-form__submit {
+      width: 35%;
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      color: #f6f6fe;
+      background-color: #3065f8;
+      border: 0;
+      border-radius: 2px;
+      box-shadow: 1px 1px 2px #585989;
+      cursor: pointer;
+      transition: all .2s; }
+      .header .cta-form .cta-form__submit:hover, .header .cta-form .cta-form__submit:focus {
+        box-shadow: 2px 2px 1px; }
+      .header .cta-form .cta-form__submit:active {
+        box-shadow: inset 1px 0 1px #070439; }
 
 /*# sourceMappingURL=style.css.map */
