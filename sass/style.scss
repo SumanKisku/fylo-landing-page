@@ -37,6 +37,10 @@ h3 {
     font-family: $primary-font;
 }
 
+p {
+    font-size: 1.2em;
+}
+
 .container { /* modifier for space on the edges */
     max-width: 1200px;
     margin: 0 120px
@@ -70,18 +74,27 @@ h3 {
     }
 }
 
+.column--left,
+.column--right {
+    max-width: 600px;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 .header {
     display: flex;
     align-items: center;
     color: $very-dark-blue;
-    .header__left,
-    .header__right {
-        max-width: 600px;
-        img {
-            width: 100%;
-            height: auto;
-        }
-    }
+    // .header__left,
+    // .header__right {
+    //     max-width: 600px;
+    //     img {
+    //         width: 100%;
+    //         height: auto;
+    //     }
+    // }
     .cta-form {
         width: 100%;
         display: flex;
@@ -109,5 +122,46 @@ h3 {
                 box-shadow: inset 0 0 5px $very-dark-blue;
             }
         }
+    }
+}
+
+.main {
+    display: flex;
+    margin-top: 150px;
+    .testimonial {
+        width: 60%;
+        padding: 20px;
+        margin-top: 50px;
+        border-radius: 2px;
+        box-shadow: 0 0 5px 2px $light-gray;
+        blockquote {
+            margin: 0 0 20px;
+            &::before {
+                content: url("../images/icon-quotes.svg");
+                display: block;
+            }
+        }
+        .testimonial__avatar {
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        span {
+            position: relative;
+            display: block;
+            top: -50px;
+            left: 60px;
+        }
+    }
+}
+
+#how-fylo-works {
+    color: $moderate-cyan;
+    &::after {
+        content: url("../images/icon-arrow.svg");
+        position: relative;
+        top: 2px;
     }
 }

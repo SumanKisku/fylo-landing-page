@@ -18,6 +18,9 @@ h2,
 h3 {
   font-family: "Raleway", sans-serif; }
 
+p {
+  font-size: 1.2em; }
+
 .container {
   /* modifier for space on the edges */
   max-width: 1200px;
@@ -44,17 +47,18 @@ h3 {
       .navigation ul a:hover {
         text-decoration: underline; }
 
+.column--left,
+.column--right {
+  max-width: 600px; }
+  .column--left img,
+  .column--right img {
+    width: 100%;
+    height: auto; }
+
 .header {
   display: flex;
   align-items: center;
   color: #070439; }
-  .header .header__left,
-  .header .header__right {
-    max-width: 600px; }
-    .header .header__left img,
-    .header .header__right img {
-      width: 100%;
-      height: auto; }
   .header .cta-form {
     width: 100%;
     display: flex; }
@@ -78,5 +82,38 @@ h3 {
         box-shadow: 2px 2px 1px; }
       .header .cta-form .cta-form__submit:active {
         box-shadow: inset 0 0 5px #070439; }
+
+.main {
+  display: flex;
+  margin-top: 150px; }
+  .main .testimonial {
+    width: 60%;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 2px;
+    box-shadow: 0 0 5px 2px #bfbfbf; }
+    .main .testimonial blockquote {
+      margin: 0 0 20px; }
+      .main .testimonial blockquote::before {
+        content: url("../images/icon-quotes.svg");
+        display: block; }
+    .main .testimonial .testimonial__avatar {
+      display: inline-block;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      overflow: hidden; }
+    .main .testimonial span {
+      position: relative;
+      display: block;
+      top: -50px;
+      left: 60px; }
+
+#how-fylo-works {
+  color: #3c9f8f; }
+  #how-fylo-works::after {
+    content: url("../images/icon-arrow.svg");
+    position: relative;
+    top: 2px; }
 
 /*# sourceMappingURL=style.css.map */
