@@ -73,11 +73,10 @@ h3 {
       border: 0;
       border-radius: 2px;
       box-shadow: 1px 1px 2px #585989;
-      cursor: pointer;
-      transition: all .2s; }
+      cursor: pointer; }
       .header .cta-form .cta-form__submit:hover, .header .cta-form .cta-form__submit:focus {
         box-shadow: 2px 2px 1px; }
       .header .cta-form .cta-form__submit:active {
-        box-shadow: inset 1px 0 1px #070439; }
+        box-shadow: inset 0 0 5px #070439; }
 
 /*# sourceMappingURL=style.css.map */
