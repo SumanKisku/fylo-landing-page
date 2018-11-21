@@ -141,4 +141,27 @@ p {
           .early-access .container .early-access__right .cta-form .cta-form__submit:active {
             box-shadow: inset 0 0 5px #070439; }
 
+.main-footer {
+  background-color: #070439;
+  color: #f6f6fe;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .main-footer .logo {
+    fill: #f6f6fe; }
+  .main-footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+    .main-footer .container .column {
+      justify-self: center; }
+      .main-footer .container .column a {
+        color: #f6f6fe;
+        text-decoration: none;
+        display: block; }
+        .main-footer .container .column a:hover {
+          text-decoration: underline; }
+    .main-footer .container .column:last-child {
+      align-self: center; }
+      .main-footer .container .column:last-child a {
+        display: inline; }
+
 /*# sourceMappingURL=style.css.map */
