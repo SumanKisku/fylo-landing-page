@@ -126,7 +126,8 @@ p {
   background-color: #585989; }
   .early-access .container {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: space-between; }
     .early-access .container .early-access__right {
       width: 600px; }
       .early-access .container .early-access__right .cta-form {

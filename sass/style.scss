@@ -168,7 +168,8 @@ p {
     background-color: $desaturated-blue;
     .container {
         display: flex;
-        align-items: center; 
+        align-items: center;
+        justify-content: space-between;
         .early-access__right {
             width: 600px;
             .cta-form {
